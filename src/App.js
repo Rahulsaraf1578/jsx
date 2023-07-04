@@ -1,9 +1,16 @@
 import React from 'react'
 
 function App() {
-  return (
-    <div>App</div>
-  )
+
+    let message = 'Bye there!'
+
+    if(Math.random(0,1)>0.5){
+        message =  'Hello there!'
+    }
+
+    return (
+        <div>{message}</div>
+    )
 }
 
 export default App
